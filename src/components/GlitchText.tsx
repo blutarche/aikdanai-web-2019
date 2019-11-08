@@ -72,12 +72,10 @@ export const GlitchText: React.FC<{ text: string }> = ({ text }) => {
   const glitchAnimationFrames1 = useMemo(() => getGlitchAnimationFrames(), [
     text,
   ])
-  console.log('TCL: glitchAnimationFrames1', glitchAnimationFrames1)
   const glitchAnimationFrames2 = useMemo(() => getGlitchAnimationFrames(), [
     text,
   ])
   const generatedUID = useMemo(() => uid(10), [text])
-  console.log('TCL: glitchAnimationFrames2', glitchAnimationFrames2)
   return (
     <GlitchTextContainer
       data-text={text}
